@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "Jokerman";
-    src: url("./font/joker.ttf");
+    src: url("/assets/fonts/Jokerman-Regular.ttf");
 }
 
 /* =========================
@@ -90,6 +90,7 @@ h1 {
 .card-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin: auto;
     position: relative;
@@ -155,8 +156,8 @@ h1 {
 /* NUMBER TEXT */
 .front-card p {
     position: absolute;
-    font-family: "Jokerman", cursive;
     font-size: 56px;
+    font-family: "Jokerman";
     font-weight: bold;
     color: #ebebeb;
     user-select: none;
