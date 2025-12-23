@@ -25,13 +25,12 @@ function generateSequence() {
     sequence = [];
     const start = Math.floor(Math.random() * 5) + 1;
     const step = Math.floor(Math.random() * 5) + 1;
-
     for (let i = 0; i < 3; i++) {
         sequence.push(start + i * step);
     }
 
     correctAnswer = sequence[2] + step;
-    sequenceText.textContent = sequence.join(", ");
+    sequenceText.textContent = sequence.join(" | ");
 }
 
 /* ---------------- BACK CARD DESIGN ---------------- */
@@ -68,7 +67,7 @@ function createCard() {
     inner.appendChild(front);
     card.appendChild(inner);
 
-    // ✅ CLICK HANDLER (THIS IS THE IMPORTANT PART)
+
     card.addEventListener("click", () => {
         const value = Number(number.textContent);
         console.log("Selected:", value);
