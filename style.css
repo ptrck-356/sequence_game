@@ -90,7 +90,7 @@ h1 {
 .card-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     margin: auto;
     position: relative;

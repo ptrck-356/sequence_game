@@ -23,15 +23,23 @@ const backDesigns = [
 
 function generateSequence() {
     sequence = [];
+
     const start = Math.floor(Math.random() * 5) + 1;
     const step = Math.floor(Math.random() * 5) + 1;
-    for (let i = 0; i < 3; i++) {
+
+    // Base length is 3, +1 every 6 rounds
+    const sequenceLength = 3 + Math.floor((round - 1) / 6);
+
+    for (let i = 0; i < sequenceLength; i++) {
         sequence.push(start + i * step);
     }
 
-    correctAnswer = sequence[2] + step;
+    // Correct answer is always the next number
+    correctAnswer = sequence[sequence.length - 1] + step;
+
     sequenceText.textContent = sequence.join(" | ");
 }
+
 
 /* ---------------- BACK CARD DESIGN ---------------- */
 
@@ -43,7 +51,7 @@ function randomizeBackCard() {
 }
 
 /* create a new card using existing structure */
-function createCard() {
+function createCard() { 
     const card = document.createElement("div");
     card.classList.add("card");
 
@@ -117,7 +125,7 @@ function flipAllCards() {
         cards.forEach(card => {
             card.classList.add("flipped");
         });
-    }, 1000); // delay before flip
+    }, 850); // delay before flip
 }
 
 
@@ -149,6 +157,19 @@ function syncCards() {
     }
 }
 
+function nextRound() {
+    round++;
+    roundText.textContent = `Round: ${round}`;
+
+ 
+    cardContainer.innerHTML = "";
+
+    for (let i = 0; i < cardCount; i++) {
+        createCard();
+    }
+}
+
+
 
 /* ---------------- ROUND LOGIC ---------------- */
 
@@ -162,6 +183,7 @@ function startRound() {
     syncCards();
     generateOptions();
     flipAllCards();
+    
 
     roundText.textContent = `Round: ${round}`;
     scoreText.textContent = `Score: ${score}`;
