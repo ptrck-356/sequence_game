@@ -12,6 +12,13 @@
     src: url("/assets/fonts/Jokerman-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Casino";
+    src: url("/assets/fonts/Casino3D.ttf");
+}
+
+
+
 /* =========================
    ROOT VARIABLES
 ========================= */
@@ -29,7 +36,7 @@
     --size-2: clamp(1rem, 2vw, 1.5rem);
     --size-3: clamp(1.5rem, 3vw, 2rem);
     --size-4: clamp(2rem, 4vw, 3rem);
-    --size-5: clamp(2.5rem, 5vw, 4rem);
+    --size-5: clamp(2.5rem, 5vw, 5rem);
 
     /* Spacing */
     --gap-1: 0.5rem;
@@ -42,6 +49,11 @@
 /* =========================
    BASE LAYOUT
 ========================= */
+html{
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--sans-serif);
     background: var(--color-1);
@@ -59,14 +71,53 @@ header {
     font-weight: 600;
 }
 
-main {
-    margin-top: 30px;
+.start-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 h1 {
     font-size: var(--size-3);
     font-weight: 600;
     margin-bottom: var(--gap-1);
+}
+
+
+.custom-button {
+  font-size: var(--size-1);
+    /* Layout & Shape */
+  cursor: pointer;
+  padding: 0.5rem 1.5rem; 
+  border-radius: 0.5rem;  
+  /* Colors & Border */
+  background-color: #a71f0d;
+  color: white;
+  border: none;
+  border-bottom: 4px solid #550c02c9;
+  /* Animation */
+  transition: all 0.2s;
+}
+
+/* Hover effects */
+.custom-button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+  border-bottom-width: 6px;
+}
+
+/* Click effects */
+.custom-button:active {
+  filter: brightness(0.9);
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}
+
+.start-screen h1 {
+    font-family: "Casino";
+    font-size: var(--size-5);
+    margin-bottom: var(--gap-2);
 }
 
 /* =========================
@@ -94,7 +145,7 @@ h1 {
     align-items: center;
     margin: auto;
     position: relative;
-    margin-top: 24px;
+    margin-top: 32px;
     gap: 16px;
 }
 
@@ -162,4 +213,41 @@ h1 {
     color: #ebebeb;
     user-select: none;
     pointer-events: none;
+}
+
+/* Default hidden state is handled by JS setting display: none, 
+   but strictly via CSS: */
+.gameover {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none; /* JS will change this to flex */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+}
+
+.gameover h2 {
+    font-size: var(--size-3);
+    font-weight: 600;
+    margin-bottom: var(--gap-1);
+}
+
+.gameover p {
+    font-size: var(--size-2);
+    margin-bottom: var(--gap-2);
+}
+
+.gameover button {
+    font-size: var(--size-1);
+    padding: 0.5rem 1.5rem; 
+    border-radius: 0.5rem;  
+    background-color: #a71f0d;
+    color: white;
+    border: none;
+    border-bottom: 4px solid #550c02c9;
+    transition: all 0.2s;
 }
