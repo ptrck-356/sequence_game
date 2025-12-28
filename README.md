@@ -140,11 +140,12 @@ The game becomes more challenging through:
 - Responsive layout
 
 Cards Design:
-![Cards](assets/card 1.svg)
-![Cards](assets/card 2.svg)
-![Cards](assets/card 3.svg)
-![Cards](assets/card 4.svg)
-![Cards](assets/card-number-placeholder.svg)
+![Cards](/assets/cards/card%201.svg)
+![Cards](/assets/cards/card%202.svg)
+![Cards](/assets/cards/card%203.svg)
+![Cards](/assets/cards/card%204.svg)
+![Cards](/assets/cards/card-number-placeholder.svg)
+
 ---
 
 ## 11. Technologies Used
