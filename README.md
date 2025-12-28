@@ -30,3 +30,33 @@ sequence_game/
 ├── style.css           # Styling and animations
 ├── script.js           # Game logic
 └── README.md           # Documentation
+```
+
+---
+
+## 4. Game Flow
+
+### 4.1 Start Screen
+- Displays the game title “Sequence Gambit”
+- Contains a Start button that navigates to the game screen
+
+### 4.2 Game Screen
+Each round displays:
+- Current round number
+- Player score
+- A numerical sequence
+- Face-down cards containing possible answers
+
+Cards flip automatically at the start of each round.
+
+---
+
+## 5. Core Game Mechanics
+
+### 5.1 Sequence Generation
+- A random starting number (1–10) is generated
+- A random step value (1–5) is chosen
+- Initial sequence length starts at 3
+- Sequence length increases every 6 rounds
+
+**Example:**
