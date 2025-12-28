@@ -138,17 +138,16 @@ The game becomes more challenging through:
 - Casino-style typography
 - Card flip animations using CSS 3D transforms
 - Responsive layout
-```
+
 Cards Back-Design:
 ![Cards](/assets/cards/card%201.svg)
 ![Cards](/assets/cards/card%202.svg)
 ![Cards](/assets/cards/card%203.svg)
 ![Cards](/assets/cards/card%204.svg)
-```
-```
+
 Card Number-Holder-Design:
 ![Cards](/assets/cards/card-number-placeholder.svg)
-```
+
 ---
 
 ## 11. Technologies Used
