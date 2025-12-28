@@ -60,3 +60,98 @@ Cards flip automatically at the start of each round.
 - Sequence length increases every 6 rounds
 
 **Example:**
+10 | 12 | 14
+Next correct number: **16**
+
+---
+
+### 5.2 Answer Logic
+The correct answer is calculated as:
+
+---
+
+### 5.3 Card Options
+- The correct answer is always included
+- Incorrect values are randomly generated
+- Game starts with 2 cards
+- Every 5 rounds, one additional card is added
+- Card positions are shuffled randomly
+
+---
+
+## 6. JavaScript Logic Overview
+
+### Key Variables
+- `round` – Tracks the current round
+- `score` – Tracks player score
+- `cardCount` – Number of cards shown
+- `sequence` – Stores the current number sequence
+- `correctAnswer` – Stores the expected next number
+- `isGameOver` – Prevents actions after game ends
+
+---
+
+### Main Functions
+- `startRound()` – Initializes each round
+- `generateSequence()` – Creates the number sequence
+- `generateOptionsData()` – Generates card values
+- `renderCards()` – Displays cards on screen
+- `nextRound()` – Advances the game
+- `endGame()` – Ends the game and shows Game Over screen
+- `resetGame()` – Resets all values for replay
+
+---
+
+## 7. Player Interaction
+
+### Correct Answer
+- Score increases by 1
+- Player advances to the next round
+
+### Incorrect Answer
+- Game ends immediately
+- Game Over screen is displayed with final score
+
+---
+
+## 8. Difficulty Progression
+The game becomes more challenging through:
+- Longer number sequences (every 6 rounds)
+- More answer cards (every 5 rounds)
+
+---
+
+## 9. Game Over & Restart
+### Game Over Condition
+- Selecting an incorrect card
+
+### Restart Behavior
+- Round resets to 1
+- Score resets to 0
+- Card count resets to 2
+- New random sequences are generated
+
+---
+
+## 10. Visual & UI Design
+- Dark-themed interface for focus
+- Casino-style typography
+- Card flip animations using CSS 3D transforms
+- Responsive layout
+
+---
+
+## 11. Technologies Used
+- HTML – Structure
+- CSS – Styling and animations
+- JavaScript – Game logic and interactivity
+
+---
+
+## 12. Group Members
+- John Patrick Agravante
+- Kate Quintero
+- Micha Ella Nardo
+- Marjorie Iyas
+- Ebrahim Pardinas
+- Christopher Labordo
