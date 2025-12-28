@@ -18,13 +18,15 @@ The game continues until the player selects an incorrect card.
 ---
 
 ## 3. Project Structure
+
+
 sequence_game/
 ├── assets/
-│ ├── cards/ # Card SVG images
-│ └── fonts/ # Custom fonts
-├── pages/
-│ └── game.html # Main game screen
-├── start-page.html # Start menu
-├── style.css # Styling and animations
-├── script.js # Game logic
-└── README.md # Documentation
+│   ├── cards/          # Card SVG images```
+│   └── fonts/          # Custom fonts```
+├── pages/```
+│   └── game.html       # Main game screen```
+├── start-page.html     # Start menu
+├── style.css           # Styling and animations```
+├── script.js           # Game logic```
+└── README.md           # Documentation```
