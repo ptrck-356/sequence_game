@@ -6,6 +6,8 @@ Sequence Gambit is a browser-based logic and pattern-recognition game where play
 The game uses a casino-inspired theme with animated flip cards to create an engaging user experience.
 
 ![Sequence Gambit](/assets/imgs/startpage.png)
+![Sequence Gambit](/assets/imgs/gamepage.png)
+![Sequence Gambit](/assets/imgs/gameoverpage.png)
 
 ---
 
