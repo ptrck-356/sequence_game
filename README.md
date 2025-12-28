@@ -139,15 +139,15 @@ The game becomes more challenging through:
 - Card flip animations using CSS 3D transforms
 - Responsive layout
 
-Cards Back-Design:
+
 ![Cards](/assets/cards/card%201.svg)
 ![Cards](/assets/cards/card%202.svg)
 ![Cards](/assets/cards/card%203.svg)
 ![Cards](/assets/cards/card%204.svg)
+Cards Back-Design:
 
-Card Number-Holder-Design:
 ![Cards](/assets/cards/card-number-placeholder.svg)
-
+Card Number-Holder-Design:
 ---
 
 ## 11. Technologies Used
