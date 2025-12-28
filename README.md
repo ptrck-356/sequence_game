@@ -7,7 +7,7 @@ The game uses a casino-inspired theme with animated flip cards to create an enga
 
 ![Sequence Gambit](/assets/imgs/startpage.png)
 ![Sequence Gambit](/assets/imgs/gamepage.png)
-![Sequence Gambit](/assets/imgs/gameoverpage.png)
+![Sequence Gambit](/assets/imgs/gameover.png)
 
 ---
 
