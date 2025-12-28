@@ -153,5 +153,5 @@ The game becomes more challenging through:
 - Kate Quintero
 - Micha Ella Nardo
 - Marjorie Iyas
-- Ebrahim Pardinas
-- Christopher Labordo
+- Ibrahim Ronald Pardinas
+- Christopher John Labordo
